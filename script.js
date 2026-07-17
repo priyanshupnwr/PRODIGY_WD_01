@@ -1,18 +1,25 @@
-console.log("Responsive Landing Page");
 const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
-    if(window.scrollY>50){
-
+    if (window.scrollY > 50) {
         navbar.classList.add("scrolled");
-
-    }
-
-    else{
-
+    } else {
         navbar.classList.remove("scrolled");
-
     }
+
+});
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
 
 });
