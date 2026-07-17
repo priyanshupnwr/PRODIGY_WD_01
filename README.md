@@ -45,7 +45,7 @@ PRODIGY_WD_01/
 
 ## Live Demo
 
-[(Add GitHub Pages link here after deployment)](https://priyanshupnwr.github.io/PRODIGY_WD_01/)
+[(Live)](https://priyanshupnwr.github.io/PRODIGY_WD_01/)
 
 ---
 
